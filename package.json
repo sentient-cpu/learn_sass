@@ -1,0 +1,11 @@
+{
+  "name": "learn_sass",
+  "version": "1.0.0",
+  "description": "used to learn the sass compiler to compile the scss file to css file.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kv",
+  "license": "ISC"
+}

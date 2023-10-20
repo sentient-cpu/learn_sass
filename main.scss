@@ -1,0 +1,63 @@
+//modules
+@use './base';
+@use 'sass:math'; //in-built module from sass
+
+//partials
+//note that there is no underscore here
+@import './part';
+
+//use variables
+h1 {
+    color: $primaryColor;
+}
+
+//nesting
+div{
+    h1 {
+        color: $secondaryColor;
+    }
+
+    color: base.$thirdColor; //using modules
+}
+
+//mixins example
+@mixin testMixin($someVar2: #56e4e4, $someVar: #d13fbe) { //default value
+    color: $someVar; //use the variable value
+}
+
+h2 {
+    @include testMixin;
+}
+
+h3 {
+    @include testMixin($someVar: #d81616);
+}
+
+
+//inheritance example
+.parentValues {
+    color: darkolivegreen;
+    border: solid;
+}
+
+.pClass1 {
+    @extend .parentValues;
+    border: dotted; //override border value
+}
+
+.pClass2 {
+    @extend .parentValues; //no values overrode here
+}
+
+
+//operators
+.mathOp {
+    color: rgb(255, 255, math.div(255, 4) * 3);
+}
+
+
+/// this is a documentation comment.
+// This is a normal single line comment.
+/*
+This is a multi-line comment.
+*/

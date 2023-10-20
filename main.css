@@ -1,0 +1,33 @@
+h1 {
+  color: #d81616;
+}
+
+div {
+  color: #5a58db;
+}
+div h1 {
+  color: #5cdf34;
+}
+
+h2 {
+  color: #d13fbe;
+}
+
+h3 {
+  color: #d81616;
+}
+
+.parentValues, .pClass2, .pClass1 {
+  color: darkolivegreen;
+  border: solid;
+}
+
+.pClass1 {
+  border: dotted;
+}
+
+.mathOp {
+  color: rgb(255, 255, 191);
+}
+
+/*# sourceMappingURL=main.css.map */
